@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Ingresar Juego</title>
+    <style>
+        body {
+            padding: 50px;
+            background-color: rgb(229, 229, 229);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="mb-4">Ingresar Juego</h1>
+        <form action="/ingresar" method="post">
+            <div class="mb-3">
+                <label for="titulo" class="form-label">Título:</label>
+                <input type="text" class="form-control" id="titulo" name="titulo" required>
+            </div>
+            <div class="mb-3">
+                <label for="desarrollador" class="form-label">Desarrollador:</label>
+                <input type="text" class="form-control" id="desarrollador" name="desarrollador" required>
+            </div>
+            <div class="mb-3">
+                <label for="plataforma" class="form-label">Plataforma:</label>
+                <input type="text" class="form-control" id="plataforma" name="plataforma" required>
+            </div>
+            <div class="mb-3">
+                <label for="imagenUrl" class="form-label">URL de la Imagen:</label>
+                <input type="text" class="form-control" id="imagenUrl" name="imagenUrl" required>
+            </div>
+            
+            <button type="submit" class="btn btn-dark">Guardar</button>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
